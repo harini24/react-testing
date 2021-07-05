@@ -43,7 +43,7 @@ describe('Greetings Component', () => {
         userEvent.click(buttonElement)
 
         //Assert
-        const linkElement = screen.queryAllByText(/Its good to see you/i);
+        const linkElement = screen.queryByText(/Its good to see you/i);
         expect(linkElement).toBeNull();
     });
 })
